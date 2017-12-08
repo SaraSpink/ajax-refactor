@@ -28,7 +28,8 @@ _A Basic E-commerce site refactored with Ajax_
 
 
 ### Updates
-- Users can remove items from the shopping cart without a page reload. (The "delete" link results inn the item being removed from the shopping cart and the total price being updated using AJAX)
+- Users can remove items from the shopping cart without a page reload. (The "delete" link results inn the item being removed from the shopping cart and the total price being updated using AJAX).
+- Users can add products to their shopping cart from the index page with AJAX. The number of items in the cart (shown in the navbar) updates without a page reload.
 
 
 
