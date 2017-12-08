@@ -6,8 +6,7 @@
 <div class="row">
   <div class="section">
   <% @products.each do |product| %>
-
-      <div class="col s4" id="hide_product">
+      <div class="col s4">
         <h4><%= link_to product.name, product_path(product), remote: true %></h4>
         <p><%= product.description %></p>
         <p><%= number_to_currency product.price %></p>
@@ -17,7 +16,6 @@
         <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
         <% end %>
       </div>
-
   <% end %>
 </div>
 </div>
