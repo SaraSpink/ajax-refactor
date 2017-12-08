@@ -12,6 +12,10 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    respond_to do |format|
+      format.html {redirect_to product_path}
+      format.js
+    end
   end
 
   def create
