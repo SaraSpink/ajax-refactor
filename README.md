@@ -10,8 +10,6 @@
 - AJAX
 - SCSS/CSS
 - HTML
-- Bootstrap
-
 
 ### Description
 
