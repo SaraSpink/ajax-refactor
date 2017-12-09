@@ -7,7 +7,7 @@
     <p> Unit Price: <%= number_to_currency item.product.price %> | Quantity: <%= item.quantity %> | Total Price: <%= number_to_currency (item.product.price * item.quantity) %></p>
     </div>
   <% end %>
-  <p>Your Total: <%= number_to_currency current_order.total_price %></p>
+  <p>Your Total: <span id="updated_price"><%= number_to_currency current_order.total_price %></span></p>
   <p><%= link_to "Finalize order", finalize_path %></p>
 <% else %>
   <p>Your shopping cart is empty.</p>
@@ -20,6 +20,6 @@
     <% order.order_items.each do |item| %>
       <p>Item name: <%= item.product.name %> | Quantity: <%= item.quantity %> | Price: <%= number_to_currency item.product.price %>
     <% end %>
-    <p>Total cost: <%= number_to_currency order.total_price %>
+    <p>Total cost: <%= number_to_currency order.total_price %></p>
   <% end %>
 <% end %>
