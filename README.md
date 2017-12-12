@@ -33,6 +33,7 @@ _A Basic E-commerce site refactored with Ajax_
 - Users can click a product name on the products index to show its details at the top of the page.
 - order_item model includes a validation that does not add items to the cart if the user enters a number less than or equal to zero.
 - products index view has added options on number field to force user to enter a number between 1 and 50
+- Flash messages appear to notify user of successful sign-up, sign-in, and sign-out
 
 
 
