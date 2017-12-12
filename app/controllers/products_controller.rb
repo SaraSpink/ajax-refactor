@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :authorize, except: [:index, :show]
+  before_action :authorize, except: [:index, :show, :new]
 
   def index
     @products = Product.all
@@ -20,7 +20,9 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    if @product.save
+    if current_user.admin === true
+      @product.save
+      flash[:alert]="product successfully created"
       redirect_to '/'
     else
       render :new
