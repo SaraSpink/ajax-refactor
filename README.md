@@ -34,7 +34,8 @@ _A Basic E-commerce site refactored with Ajax_
 - order_item model includes a validation that does not add items to the cart if the user enters a number less than or equal to zero.
 - products index view has added options on number field to force user to enter a number between 1 and 50
 - Flash messages appear to notify user of successful sign-up, sign-in, and sign-out
-- A user can only create products if they are logged in as an admin. A flash message notifies them that they must log in as an admin to create projects.
+- A user can only create products if they are logged in as an admin. A flash message notifies them that they must log in as an admin to create projects
+- Fixed row height issue on columns
 
 
 
