@@ -37,6 +37,7 @@ _A Basic E-commerce site refactored with Ajax_
 - A user can only create products if they are logged in as an admin. A flash message notifies them that they must log in as an admin to create projects
 - Fixed row height issue on columns
 - Add validations for product name and description to product class
+- Add custom colors in materialize
 
 
 
